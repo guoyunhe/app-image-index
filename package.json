@@ -1,0 +1,48 @@
+{
+  "name": "app-image-index",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/guoyunhe/app-image-index#readme",
+  "bugs": {
+    "url": "https://github.com/guoyunhe/app-image-index/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoyunhe/app-image-index.git"
+  },
+  "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "ci:eslint": "eslint -f json src -o ./.ci/eslint.json",
+    "lint": "eslint .",
+    "lint:fix": "prettier --write . && eslint --fix .",
+    "prepare": "husky",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
+  },
+  "prettier": "prettier-config-ali",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "eslint": "^9.27.0",
+    "eslint-config-ali": "^16.3.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.5.3",
+    "prettier-config-ali": "^1.3.4"
+  },
+  "packageManager": "pnpm@10.11.0"
+}

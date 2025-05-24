@@ -1,3 +1,9 @@
 {
-  "$schema": "https://app-image-index.netlify.app/schemas/index.json"
+  "$schema": "https://app-image-index.netlify.app/schemas/index.json",
+  "updatedAt": "2025-05-24T23:37:05.127Z",
+  "apps": [
+    {
+      "id": "com.libretro.RetroArch"
+    }
+  ]
 }

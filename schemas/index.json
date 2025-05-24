@@ -8,6 +8,19 @@
     "updatedAt": {
       "description": "Timestamp of last update",
       "type": "string"
+    },
+    "apps": {
+      "description": "List of apps",
+      "type": "array",
+      "item": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Unique identifier. Same as in AppStream metadata.",
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }

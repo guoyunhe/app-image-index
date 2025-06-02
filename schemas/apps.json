@@ -26,7 +26,7 @@
         "description": "Version number",
         "type": "string"
       },
-      "images": {
+      "files": {
         "description": "AppImage file list",
         "type": "array",
         "item": {
@@ -39,11 +39,19 @@
             "url": {
               "description": "File url",
               "type": "string"
+            },
+            "size": {
+              "description": "File size in bytes",
+              "type": "number"
             }
           }
         }
+      },
+      "updatedAt": {
+        "description": "ISO timestamp of last update",
+        "type": "string"
       }
     },
-    "required": ["id", "license"]
+    "required": ["id", "license", "version"]
   }
 }

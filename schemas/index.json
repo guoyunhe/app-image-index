@@ -18,8 +18,20 @@
           "id": {
             "description": "Unique identifier. Same as in AppStream metadata.",
             "type": "string"
+          },
+          "oldIds": {
+            "description": "If id changed, keep old ids here for updating.",
+            "type": "array",
+            "item": {
+              "type": "string"
+            }
+          },
+          "license": {
+            "description": "SPDX license expression. Same as project_license in AppStream metadata.",
+            "type": "string"
           }
-        }
+        },
+        "required": ["id", "productName"]
       }
     }
   }

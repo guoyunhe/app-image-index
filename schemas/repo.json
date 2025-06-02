@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://app-image-index.netlify.app/schemas/version.json",
+  "title": "Version",
+  "description": "AppImage repopository index",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier of the repo",
+      "type": "string"
+    },
+    "name": {
+      "description": "Display name of the repo",
+      "type": "string"
+    },
+    "updatedAt": {
+      "description": "Timestamp of last update",
+      "type": "string"
+    }
+  },
+  "required": ["id", "name", "updatedAt"]
+}

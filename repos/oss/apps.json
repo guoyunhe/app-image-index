@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://app-image-index.netlify.app/schemas/index.json",
+  "title": "Index",
+  "description": "AppImage repository index",
+  "type": "object",
+  "properties": {
+    "updatedAt": {
+      "description": "Timestamp of last update",
+      "type": "string"
+    },
+    "apps": {
+      "description": "List of apps",
+      "type": "array",
+      "item": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Unique identifier. Same as in AppStream metadata.",
+            "type": "string"
+          },
+          "oldIds": {
+            "description": "If id changed, keep old ids here for updating.",
+            "type": "array",
+            "item": {
+              "type": "string"
+            }
+          },
+          "license": {
+            "description": "SPDX license expression. Same as project_license in AppStream metadata.",
+            "type": "string"
+          }
+        },
+        "required": ["id", "productName"]
+      }
+    }
+  }
+}

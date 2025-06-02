@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://app-image-index.netlify.app/schemas/version.json",
   "title": "Version",
-  "description": "AppImage repopository index",
+  "description": "AppImage repository index",
   "type": "object",
   "properties": {
     "id": {

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://app-image-index.netlify.app/schemas/apps.json",
+  "title": "Apps",
+  "description": "AppImageIndex app list",
+  "type": "array",
+  "item": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "AppStream ID (prefered) or binary name (fallback)",
+        "type": "string"
+      },
+      "oldIds": {
+        "description": "If id changed, keep old ids here for updating",
+        "type": "array",
+        "item": {
+          "type": "string"
+        }
+      },
+      "license": {
+        "description": "SPDX license expression",
+        "type": "string"
+      },
+      "version": {
+        "description": "Version number",
+        "type": "string"
+      },
+      "images": {
+        "description": "AppImage file list",
+        "type": "array",
+        "item": {
+          "type": "object",
+          "properties": {
+            "arch": {
+              "description": "CPU architecture",
+              "type": "string"
+            },
+            "url": {
+              "description": "File url",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required": ["id", "license"]
+  }
+}

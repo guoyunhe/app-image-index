@@ -10,8 +10,9 @@
       "type": "string"
     },
     "updatedAt": {
-      "description": "Last update timestamp (ISO)",
+      "description": "Timestamp of last update  (ISO)",
       "type": "string"
     }
-  }
+  },
+  "required": ["name", "updatedAt"]
 }
